@@ -10,8 +10,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
 
     Counters.Counter private _tokenIds;
 
-    bytes32 public constant PROPERTY_MANAGER_ROLE = keccak256("PROPERTY_MANAGER_ROLE");
-
+    bytes32 public constant PROPERTY_MANAGER_ROLE = keccak256("PROPERTY_MANAGER_ROLE
     struct PropertyDetails 
         string location;
         uint256 area; // in square meters
