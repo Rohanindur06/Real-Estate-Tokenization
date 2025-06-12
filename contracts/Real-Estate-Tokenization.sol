@@ -8,8 +8,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract RealEstateTokenization is ERC721URIStorage, AccessControl {
     using Counters for Counters.Counter;
 
-    Counters.Counter private _tokenIds;
-
+    Counters.Counter private _tokenIds
     bytes32 public constant PROPERTY_MANAGER_ROLE = keccak256("PROPERTY_MANAGER_ROLE
     struct PropertyDetail
         string location;
