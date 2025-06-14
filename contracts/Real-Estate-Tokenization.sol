@@ -13,7 +13,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
         string location;
         uint256 area; // in square meters
         uint256 valuation; // in wei (or USD equivalent)
-        string ipfsHash; // optional IPFS link for documents
+        string ipfsHash; 
     }
 
     mapping(uint256 => PropertyDetails) public propertyInfo;
