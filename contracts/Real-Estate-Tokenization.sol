@@ -15,19 +15,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
         uint256 valuation; // in wei (or USD equivalent)
         string ipfsHash; 
     }
-
-    mapping(uint256 => PropertyDetails) public propertyInfo;
-
-    event PropertyMinted(uint256 indexed tokenId, address indexed owner, string location, uint256 valuation);
-
-    constructor() ERC721("RealEstateToken", "RET") {
-        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
-        _grantRole(PROPERTY_MANAGER_ROLE, msg.sender);
-    }
-
-    modifier onlyManager() {
-        require(hasRole(PROPERTY_MANAGER_ROLE, msg.sender), "Not authorized");
-        _;
+\
     }
 
     function mintProperty(
