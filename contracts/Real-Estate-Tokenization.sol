@@ -12,7 +12,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
     bytes32 public constant PROPERTY_MANAGER_ROLE = keccak256("PROPERTY_MANAGER_ROLE
         string location;
         uint256 area; // in square meters
-        uint256 valuation; // in wei (or USD equivalent)))
+        uint256 valuation; // in wei (or USD equivalen
     function mintProperty(
         address to,
         string memory tokenURI,
