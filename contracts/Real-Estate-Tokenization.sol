@@ -14,16 +14,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
         uint256 area; // in square meters
         uint256 valuation; // in wei (or USD equivalen
     function mintProperty(
-        address to,
-        string memory tokenURI,
-        string memory location,
-        uint256 area,
-        uint256 valuation,
-        string memory ipfsHash
-    ) external onlyManager {
-        _tokenIds.increment();
-        uint256 newTokenId = _tokenIds.current();
-
+        
         _safeMint(to, newTokenId);
         _setTokenURI(newTokenId, tokenURI);
 
