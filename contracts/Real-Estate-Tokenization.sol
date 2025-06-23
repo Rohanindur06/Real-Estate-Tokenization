@@ -8,8 +8,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract RealEstateTokenization is ERC721URIStorage, AccessControl {
     using Counters for Counters.Counter;
 
-    Counters.Counter private _tokenIds
-    
+ 
         uint256 area; // in square meters
         uint256 valuation; // in wei (or USD equivalen
     function mintProperty(
