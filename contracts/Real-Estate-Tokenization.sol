@@ -14,7 +14,7 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
     function mintProperty(
     
         _setTokenURI(newTokenId, tokenURI);
-
+\\
         propertyInfo[newTokenId] = PropertyDetails(location, area, valuation, ipfsHash);
 
         emit PropertyMinted(newTokenId, to, location, valuation);
