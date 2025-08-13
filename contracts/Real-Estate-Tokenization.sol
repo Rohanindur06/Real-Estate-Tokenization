@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: 
+// SPDX-License-Identifier: mit
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -33,3 +33,4 @@ contract RealEstateTokenization is ERC721URIStorage, AccessControl {
         revokeRole(PROPERTY_MANAGER_ROLE, account);
     }
 }
+
