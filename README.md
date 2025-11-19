@@ -1,4 +1,4 @@
-# Real Estate Tokenization                           
+# Real Estate Tokenization                          
 
 ## Project Description
 
