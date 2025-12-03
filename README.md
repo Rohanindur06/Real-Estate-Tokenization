@@ -15,7 +15,7 @@ We envision a future where:
 - Property ownership is transparent and verifiable on the blockchain
 - Liquidity in real estate markets is significantly improved
 - Global investors can participate in local real estate markets
-- Transaction costs and intermediaries are minimized through smart contracts
+- Transaction costs and intermediaries are minimized through smart contracts   
 
 ## Key Features
 
